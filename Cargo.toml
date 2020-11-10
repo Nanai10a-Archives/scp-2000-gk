@@ -4,6 +4,20 @@ version = "0.1.0"
 authors = ["Nanai10a <Nanai10a@tutanota.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+reqwest = "0.10.8"
+tempdir = "0.3.7"
+serde = "1.0.117"
+serde_derive = "1.0.117"
+bson = "1.1.0"
+dotenv = "0.15.0"
+
+[dependencies.mongodb]
+version = "1.1.0"
+default-features = false
+features = ["tokio-runtime"]
+
+[dependencies.tokio]
+version = "0.3.3"
+default-features = false
+features = ["full"]
