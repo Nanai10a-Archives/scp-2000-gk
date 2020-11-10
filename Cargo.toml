@@ -21,3 +21,8 @@ features = ["tokio-runtime"]
 version = "0.3.3"
 default-features = false
 features = ["full"]
+
+[dependencies.serenity]
+version = "0.9.1"
+default-features = false
+features = ["builder", "collector", "client", "gateway", "model", "rustls_backend"]
